@@ -792,7 +792,7 @@ function AuditForm({ initial, onSave, onCancel }) {
                 <input type="password" placeholder="PIN" value={pinInput} onChange={e=>setPinInput(e.target.value)}
                   onKeyDown={e=>{if(e.key==="Enter"){if(pinInput===SUPERVISOR_PIN){setPinUnlocked(true);setShowPinPrompt(false);}else{setPinInput("");alert("Incorrect PIN");}}}}
                   style={{fontSize:12,padding:"4px 10px",borderRadius:8,border:"1px solid rgba(255,255,255,0.2)",background:"rgba(255,255,255,0.07)",color:"#e2e8f0",outline:"none",width:80}}/>
-                <button onClick={()=>{if(pinInput===SUPERVISOR_PIN){setPinUnlocked(true);setShowPinPrompt(false);}else{setPinInput("");alert("Incorrect PIN");}}}}
+                <button onClick={()=>{if(pinInput===SUPERVISOR_PIN){setPinUnlocked(true);setShowPinPrompt(false);}else{setPinInput("");alert("Incorrect PIN");}}}
                   style={{fontSize:11,padding:"4px 10px",borderRadius:6,border:"none",background:"#3b82f6",color:"#fff",cursor:"pointer",fontWeight:700}}>Enter</button>
               </div>
             )}
