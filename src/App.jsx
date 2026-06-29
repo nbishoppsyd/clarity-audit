@@ -26,24 +26,13 @@ const SITES = [
 
 // ─── SHARED CHECKLIST SECTIONS (adult) ────────────────────────────────────────
 const ADULT_OPEN_PHP = [
-  { section: "Consent & Disclosure", items: [
+  { section: "Patient Acknowledgment and Informed Consent", items: [
     { text: "Informed consent for treatment signed and dated" },
-    { text: "HIPAA Notice of Privacy Practices signed" },
-    { text: "ROI forms completed for all applicable parties" },
+    { text: "Notice of Privacy Practices signed" },
+    { text: "OP Provider ROI completed" },
     { text: "Emergency contact ROI completed" },
-    { text: "Financial consent / fee agreement signed" },
-    { text: "Mindful movement consent signed" },
-    { text: "Consent for telehealth signed (if applicable)", na: true },
-    { text: "Consent for specific treatment modalities documented (e.g., EMDR, exposure therapy)", na: true },
-  ]},
-  { section: "Patient Rights", items: [
-    { text: "Patient rights reviewed verbally with patient at admission" },
-    { text: "Patient rights document signed by patient" },
-    { text: "Grievance process explained and documented" },
-    { text: "Right to refuse treatment explained and documented" },
-    { text: "Confidentiality rights and limits explained" },
-    { text: "Language preference assessed at admission" },
-    { text: "Interpreter services offered/provided if needed", na: true },
+    { text: "Financial Policy Agreement signed" },
+    { text: "Mindful Movement Group Participant Waiver signed" },
   ]},
   { section: "Screening & Intake (Biopsychosocial)", items: [
     { text: "Biopsychosocial assessment completed within 24 hrs of admission" },
@@ -125,22 +114,13 @@ const ADULT_OPEN_PHP = [
 ];
 
 const ADULT_CLOSED_PHP = [
-  { section: "Consent & Disclosure", items: [
+  { section: "Patient Acknowledgment and Informed Consent", items: [
     { text: "Informed consent for treatment signed and dated" },
-    { text: "HIPAA Notice of Privacy Practices signed" },
-    { text: "ROI forms completed for all applicable parties" },
+    { text: "Notice of Privacy Practices signed" },
+    { text: "OP Provider ROI completed" },
     { text: "Emergency contact ROI completed" },
-    { text: "Financial consent / fee agreement signed" },
-    { text: "Mindful movement consent signed" },
-    { text: "Consent for specific treatment modalities present (if applicable)", na: true },
-  ]},
-  { section: "Patient Rights", items: [
-    { text: "Patient rights document signed by patient" },
-    { text: "Grievance process explained and documented" },
-    { text: "Right to refuse treatment documented" },
-    { text: "Confidentiality rights and limits documented" },
-    { text: "Language preference assessed and documented" },
-    { text: "Interpreter services provided if needed", na: true },
+    { text: "Financial Policy Agreement signed" },
+    { text: "Mindful Movement Group Participant Waiver signed" },
   ]},
   { section: "Screening & Intake (Biopsychosocial)", items: [
     { text: "Biopsychosocial assessment present and complete" },
@@ -210,24 +190,13 @@ const ADULT_CLOSED_PHP = [
 ];
 
 const ADULT_OPEN_IOP = [
-  { section: "Consent & Disclosure", items: [
+  { section: "Patient Acknowledgment and Informed Consent", items: [
     { text: "Informed consent for treatment signed and dated" },
-    { text: "HIPAA Notice of Privacy Practices signed" },
-    { text: "ROI forms completed for all applicable parties" },
+    { text: "Notice of Privacy Practices signed" },
+    { text: "OP Provider ROI completed" },
     { text: "Emergency contact ROI completed" },
-    { text: "Financial consent / fee agreement signed" },
-    { text: "Mindful movement consent signed" },
-    { text: "Consent for telehealth signed (if applicable)", na: true },
-    { text: "Consent for specific treatment modalities documented (e.g., EMDR, exposure therapy)", na: true },
-  ]},
-  { section: "Patient Rights", items: [
-    { text: "Patient rights reviewed verbally with patient at admission" },
-    { text: "Patient rights document signed by patient" },
-    { text: "Grievance process explained and documented" },
-    { text: "Right to refuse treatment explained and documented" },
-    { text: "Confidentiality rights and limits explained" },
-    { text: "Language preference assessed at admission" },
-    { text: "Interpreter services offered/provided if needed", na: true },
+    { text: "Financial Policy Agreement signed" },
+    { text: "Mindful Movement Group Participant Waiver signed" },
   ]},
   { section: "Screening & Intake (Biopsychosocial)", items: [
     { text: "Biopsychosocial assessment completed within required timeframe" },
@@ -303,22 +272,13 @@ const ADULT_OPEN_IOP = [
 ];
 
 const ADULT_CLOSED_IOP = [
-  { section: "Consent & Disclosure", items: [
+  { section: "Patient Acknowledgment and Informed Consent", items: [
     { text: "Informed consent for treatment signed and dated" },
-    { text: "HIPAA Notice of Privacy Practices signed" },
-    { text: "ROI forms completed for all applicable parties" },
+    { text: "Notice of Privacy Practices signed" },
+    { text: "OP Provider ROI completed" },
     { text: "Emergency contact ROI completed" },
-    { text: "Financial consent / fee agreement signed" },
-    { text: "Mindful movement consent signed" },
-    { text: "Consent for specific treatment modalities present (if applicable)", na: true },
-  ]},
-  { section: "Patient Rights", items: [
-    { text: "Patient rights document signed by patient" },
-    { text: "Grievance process explained and documented" },
-    { text: "Right to refuse treatment documented" },
-    { text: "Confidentiality rights and limits documented" },
-    { text: "Language preference assessed and documented" },
-    { text: "Interpreter services provided if needed", na: true },
+    { text: "Financial Policy Agreement signed" },
+    { text: "Mindful Movement Group Participant Waiver signed" },
   ]},
   { section: "Screening & Intake (Biopsychosocial)", items: [
     { text: "Biopsychosocial assessment present and complete" },
@@ -414,8 +374,7 @@ function getChecklist(site, loc, chartType) {
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
 const SECTION_COLORS = {
-  "Consent & Disclosure": "#6366f1",
-  "Patient Rights": "#a855f7",
+  "Patient Acknowledgment and Informed Consent": "#6366f1",
   "Screening & Intake (Biopsychosocial)": "#0ea5e9",
   "Treatment Plan": "#10b981",
   "Psychiatric Evaluation & Medication Management": "#f59e0b",
